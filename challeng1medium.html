@@ -11,15 +11,18 @@
         
         <script>
         
-            "use strict"
+            "use strict";
             var numbers = [1,2,3,4,5];     // array of numbers
+            var numbers2 = [1,2,3,4];
             var findNum = 5;              // number to be found
             
             // determines what position findNum is in the array, returns position if that number is in the array or returns -1 if it is not inside of the array.
-            var index = numbers.indexOf(findNum); 
+            var index = numbers.indexOf(findNum);
+            var index2 = numbers2.indexOf(findNum);
             
             // displays the position of target number
-            document.write("The position of " + findNum + " is " + index + " in the array.");
+            document.write("The position of " + findNum + " is " + index + " in the array " + "[" + numbers + "]");
+            document.write("<br>The position of " + findNum + " is " + index2 + " in the array " + "[" + numbers2 + "]");
             
           
             
